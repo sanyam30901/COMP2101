@@ -1,8 +1,14 @@
 #!/bin/bash
+echo "Report for myvm"
+echo ----------------
+echo ----------------
 
-hostnamectl
+echo "Hostname:::$(hostnamectl)"
 #showing details about the system information,hostname,operating system, kernel version and machine id.
-hostname -I
+echo "Ip Address:::$(hostname -I)"
 #show the ip address of the machine
-df -h /
+echo "Root Filesystem Free Space:::$(df -h /)"
 #amount of available disk space in a human friendly number
+echo ----------------
+echo ----------------
+
